@@ -23,7 +23,7 @@ jobs:
       run: ./test_potencia
 
     - name: execute
-      run: ./potenca
+      run: ./potencia
       
     - name: mostrar o conteúdo do arquivo criado
       run: cat potencia.txt
