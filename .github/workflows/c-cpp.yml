@@ -17,3 +17,5 @@ jobs:
       run: gcc teste_potencia.c -o test_potencia
     - name: execute
       run: ./test_potencia
+    - name: mostrar o conteúdo do arquivo criado
+      run: cat potencia.txt
