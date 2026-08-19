@@ -13,9 +13,17 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: compile
+    - name: compile_test
       run: gcc teste_potencia.c -o test_potencia
-    - name: execute
+
+    - name: compile
+      run: gcc potencia.c -o potencia
+      
+    - name: execute_test
       run: ./test_potencia
+
+    - name: execute
+      run: ./potenca
+      
     - name: mostrar o conteúdo do arquivo criado
       run: cat potencia.txt
